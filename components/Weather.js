@@ -20,11 +20,11 @@ export default function Weather(props) {
    }
    const styles = StyleSheet.create({
     backdrop: {
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
         alignItems: 'center',
-        width: 400,
+        width: '100%',
         height: '100%'
-
-       
     },
    });
    
