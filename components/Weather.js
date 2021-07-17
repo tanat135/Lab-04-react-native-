@@ -53,6 +53,7 @@ useEffect(() => {
     text: {
         fontSize: 30,
         color: '#fdf5e6'
-    }});
+    }
+});
    
    
