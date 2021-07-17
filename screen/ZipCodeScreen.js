@@ -9,6 +9,7 @@ const availableZipItems = [
     { place: 'Trang', code: '92000' },
     { place: 'Chiangmai', code: '50000' },
     { place: 'Khonkaen', code: '40000' },
+
    ]
    
 const ZipItem = ({place, code, navigation}) => (
@@ -23,6 +24,7 @@ const ZipItem = ({place, code, navigation}) => (
 )
 
 export default function ZipCodeScreen(){
+
 const navigation = useNavigation()
  return (
     <View >
@@ -41,11 +43,14 @@ const navigation = useNavigation()
 
 const styles = StyleSheet.create({
     main: {
-         
+        
         textAlign: 'center',
         fontSize: 30,
-        color: `#fdf5e6`,
-        backgroundColor: '#b0c4de'
+        color: `#f0f8ff`,
+        backgroundColor: `#000080`,
+        width: '100%',
+        height: '20%',
+                
         
     },
     zipItem: {

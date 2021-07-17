@@ -31,29 +31,36 @@ useEffect(() => {
     
     return (
         <View>
-            <ImageBackground source={require('../bg.jpg')} style={styles.backdrop}>
-                <Text></Text>
-                <Text style={styles.text}> Zip Code is {props.zipCode}</Text>
-                <Text></Text>
-                <Forecast {...forecastInfo} />
-            </ImageBackground>
+             <View>
+                <ImageBackground source={require('../bg.jpg')} style={styles.backdrop}>
+                    <Text style={styles.text}> Zip Code is {props.zipCode}</Text>
+                    <Forecast {...forecastInfo} />
+                </ImageBackground>
+            </View>
         </View>
     );
    }
    
    const styles = StyleSheet.create({
     backdrop: {
-        flexDirection: 'column',
-        justifyContent: 'flex-start',
+        
         alignItems: 'center',
         width: '100%',
         height: '100%',
         
     },
     text: {
-        fontSize: 30,
-        color: '#fdf5e6'
-    }
+        
+        fontSize: 15,
+        color: '#fdf5e6',
+        backgroundColor: 'rgba(52, 52, 52, 0.8)',
+        opacity: 0.9,
+        height:'5%',
+        width: '100%',
+        textAlign: 'center'
+        
+    },
+ 
 });
    
    

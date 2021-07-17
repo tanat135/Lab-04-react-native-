@@ -3,17 +3,17 @@ import { View, Text , StyleSheet} from "react-native"
 
 export default function Forecast(props) {
     return (
-    <View style={styles.main} >
-        
-        <Text style={styles.text }>main</Text>
-        <Text style={styles.data }>{props.main}</Text>
-        <Text style={styles.text }>Country</Text>
-        <Text style={styles.data }>{props.name} {props.country}</Text>
-        <Text style={styles.text }>Description</Text>
-        <Text style={styles.data }>{props.description}</Text>
-        <Text style={styles.text }>{props.temp} °C </Text>
-        
-    </View>
+     
+        <View style={styles.main} >
+            <Text style={styles.text }>main</Text>
+            <Text style={styles.data }>{props.main}</Text>
+            <Text style={styles.text }>Country</Text>
+            <Text style={styles.data }>{props.name} {props.country}</Text>
+            <Text style={styles.text }>Description</Text>
+            <Text style={styles.data }>{props.description}</Text>
+            <Text style={styles.data }>{props.temp} °C </Text>
+        </View>
+    
     );
    }
    
@@ -22,16 +22,18 @@ export default function Forecast(props) {
         flexDirection: 'column',
         justifyContent: 'flex-start',
         alignItems: 'center',
+        backgroundColor: 'rgba(52, 52, 52, 0.8)',
+        opacity: 0.9,
+        height:'33%',
         width: '100%',
-        height: '100%',
-        
+        display: "flex"
     },
     text: {
-        fontSize: 25,
-        color: `#7fffd4`
+        fontSize: 20,
+        color: `#ff7f50`
     },
     data:{
-        fontSize: 20,
+        fontSize: 17,
         color: '#fdf5e6'
     }
 });
