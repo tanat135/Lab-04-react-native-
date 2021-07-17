@@ -11,6 +11,8 @@ useEffect(() => {
             .then((json) => {
                 setForecastInfo({
                     main: json.weather[0].main,
+                    name: json.name,
+                    country: json.sys.country,
                     description: json.weather[0].description,
                     temp: json.main.temp});
         })
