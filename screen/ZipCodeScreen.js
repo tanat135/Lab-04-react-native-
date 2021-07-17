@@ -2,12 +2,17 @@ import { useNavigation } from '@react-navigation/native';
 import React from 'react'
 import { FlatList, View, Text, StyleSheet,  } from 'react-native';
 import { TouchableHighlight } from 'react-native-gesture-handler';
+import { color,fontSize } from 'react-native-reanimated';
 const availableZipItems = [
     { place: 'Hatyai', code: '90110' },
+    { place: 'Surattani', code: '84000'},
     { place: 'Trang', code: '92000' },
     { place: 'Chiangmai', code: '50000' },
     { place: 'Khonkaen', code: '40000' },
-    { place: 'Chonburi', code: '20000' },
+    { place: 'Krabi', code: '81000' },
+    { place: 'Chumphon', code: '86000' },
+    { place: 'Satun', code: '91000' },
+    { place: 'Phuket', code: '83000' },
    ]
    
 const ZipItem = ({place, code, navigation}) => (
@@ -40,7 +45,11 @@ const styles = StyleSheet.create({
     zipItem: {
         flex: 1,
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        fontSize: 10 ,
+        backgroundColor: '#b0e0e6'
+        
+        
     },
     zipPlace: {
         flex: 1,
