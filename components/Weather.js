@@ -33,7 +33,7 @@ useEffect(() => {
         <View>
             <ImageBackground source={require('../bg.jpg')} style={styles.backdrop}>
                 <Text></Text>
-                <Text>Zip Code is {props.zipCode}</Text>
+                <Text style={styles.text}> Zip Code is {props.zipCode}</Text>
                 <Text></Text>
                 <Forecast {...forecastInfo} />
             </ImageBackground>
@@ -50,6 +50,9 @@ useEffect(() => {
         height: '100%',
         
     },
-   });
+    text: {
+        fontSize: 30,
+        color: '#fdf5e6'
+    }});
    
    
